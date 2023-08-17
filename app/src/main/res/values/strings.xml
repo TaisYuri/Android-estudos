@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Basics</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="list">Lista</string>
+    <string name="save">save</string>
+    <string name="Settings" />
+    <string name="activity1">Activity1</string>
+</resources>
