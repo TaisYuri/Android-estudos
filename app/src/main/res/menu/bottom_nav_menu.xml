@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_activity1"
+        android:title="@string/activity1"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/bottom_recycler"
+        android:icon="@drawable/ic_logo"
+        android:title="RecyclerView" />
+</menu>

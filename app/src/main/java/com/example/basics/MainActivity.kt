@@ -67,6 +67,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Drawer::class.java)
             startActivity(intent)
         }
+
+        binding.buttonBottom.setOnClickListener {
+            startActivity(Intent(this, BottomNav::class.java))
+        }
     }
 
 

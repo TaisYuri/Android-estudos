@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Basics">
         <activity
+            android:name=".BottomNav"
+            android:exported="false" />
+        <activity
             android:name=".Drawer"
             android:exported="false"
-            android:theme="@style/Theme.Basics.NoActionBar"/>
+            android:theme="@style/Theme.Basics.NoActionBar" />
         <activity
             android:name=".RecycleView"
             android:exported="false"
