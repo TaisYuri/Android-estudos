@@ -121,5 +121,15 @@
         app:layout_constraintStart_toStartOf="@+id/button_drawer"
         app:layout_constraintTop_toBottomOf="@+id/button_drawer" />
 
+    <Button
+        android:id="@+id/button_nav_component"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Navigation Component"
+        app:layout_constraintEnd_toEndOf="@+id/button_bottom"
+        app:layout_constraintStart_toStartOf="@+id/button_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/button_bottom" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 

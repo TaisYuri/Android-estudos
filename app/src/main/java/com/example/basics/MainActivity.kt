@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.basics.NavigationComponents.ComponentPai
 import com.example.basics.databinding.ActivityMainBinding
 import java.io.Serializable
 
@@ -45,16 +46,17 @@ class MainActivity : AppCompatActivity() {
         }
 
         //Acessando um Fragment
-        val fragmentManager = supportFragmentManager
-        val fragmenteTransaction = fragmentManager.beginTransaction()
+        val fragmenteTransaction = supportFragmentManager.beginTransaction()
 
         //adiciona o fragment em fragmentLayoutFirst( espaço criado no layout com este nome)
-//        fragmenteTransaction.add(R.id.fragmentLayout, FirstFragment())
-//        fragmenteTransaction.commit()
+        //fragmenteTransaction.add(R.id.fragmentLayout, FirstFragment())
+        //fragmenteTransaction.commit()
 
         //Troca o fragment1 para fragment2 ao clicar no botão
         binding.buttonTrocarFragment.setOnClickListener {
-            fragmenteTransaction.replace(R.id.fragmentLayout, SecondFragment())
+            val fragmentSecond = SecondFragment.newInstance("Passando informações para o fragment", "Hellow World")
+
+            fragmenteTransaction.replace(R.id.fragmentLayout, fragmentSecond)
             fragmenteTransaction.commit()  //só pode haver um commit. Então o firstfragment está setado direto no layout
         }
 
@@ -70,6 +72,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonBottom.setOnClickListener {
             startActivity(Intent(this, BottomNav::class.java))
+        }
+
+        binding.buttonNavComponent.setOnClickListener {
+            startActivity(Intent(this, ComponentPai::class.java))
         }
     }
 
