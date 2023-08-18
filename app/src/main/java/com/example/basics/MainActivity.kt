@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.basics.NavigationComponents.ComponentPai
+import com.example.basics.NavigationComponents.MainActivityComponent
 import com.example.basics.databinding.ActivityMainBinding
 import java.io.Serializable
 
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonNavComponent.setOnClickListener {
-            startActivity(Intent(this, ComponentPai::class.java))
+            startActivity(Intent(this, MainActivityComponent::class.java))
         }
     }
 

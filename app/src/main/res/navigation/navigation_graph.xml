@@ -3,20 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_graph"
-    app:startDestination="@id/blankFragment1">
-
+    android:label="JokenPo"
+    app:startDestination="@id/home_fragment">
     <fragment
-        android:id="@+id/blankFragment1"
-        android:name="com.example.basics.NavigationComponents.BlankFragment1"
-        android:label="fragment_blank1"
-        tools:layout="@layout/fragment_blank1" >
+        android:id="@+id/home_fragment"
+        android:name="com.example.basics.NavigationComponents.HomeFragment"
+        android:label="HomeFragment">
         <action
-            android:id="@+id/action_blankFragment1_to_blankFragment2"
-            app:destination="@id/blankFragment2" />
+            android:id="@+id/action_homeFragment2_to_nav_game"
+            app:destination="@id/nav_game" />
     </fragment>
-    <fragment
-        android:id="@+id/blankFragment2"
-        android:name="com.example.basics.NavigationComponents.BlankFragment2"
-        android:label="fragment_blank2"
-        tools:layout="@layout/fragment_blank2" />
+    <navigation
+        android:id="@+id/nav_game"
+        app:startDestination="@id/playerFragment">
+        <fragment
+            android:id="@+id/playerFragment"
+            android:name="com.example.basics.NavigationComponents.PlayerFragment"
+            android:label="Player" />
+        <fragment
+            android:id="@+id/resultFragment"
+            android:name="com.example.basics.NavigationComponents.ResultFragment"
+            android:label="Resultado" />
+    </navigation>
 </navigation>

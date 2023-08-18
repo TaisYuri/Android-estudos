@@ -3,7 +3,6 @@ package com.example.basics
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.basics.databinding.ActivityDrawerBinding
@@ -35,7 +34,7 @@ class Drawer : AppCompatActivity() {
         navDrawer.setNavigationItemSelectedListener { menuItem ->
             drawer.closeDrawers()
             when(menuItem.itemId){
-                R.id.drawer_activity1 -> {
+                R.id.activity1 -> {
                     onBackPressedDispatcher.onBackPressed()
                     true
                 }

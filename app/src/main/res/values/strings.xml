@@ -5,6 +5,6 @@
     <string name="hello_blank2_fragment">Hello blank fragment 2</string>
     <string name="list">Lista</string>
     <string name="save">save</string>
-    <string name="Settings" />
+    <string name="Settings">Reiniciar</string>
     <string name="activity1">Activity1</string>
 </resources>

@@ -10,8 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Basics">
         <activity
-            android:name=".NavigationComponents.ComponentPai"
-            android:exported="false" />
+            android:name=".NavigationComponents.MainActivityComponent"
+            android:exported="false"
+            android:theme="@style/Theme.Basics.NoActionBar"/>
         <activity
             android:name=".BottomNav"
             android:exported="false" />
