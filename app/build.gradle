@@ -61,4 +61,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
     implementation("androidx.lifecycle:lifecycle-common-java8:$lifecycle_version")
 
+    testImplementation("com.google.truth:truth:1.1.4")
+    testImplementation("io.mockk:mockk-common:1.12.5")
+    testImplementation("io.mockk:mockk:1.12.5")
+
 }
